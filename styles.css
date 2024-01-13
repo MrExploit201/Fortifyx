@@ -1,77 +1,103 @@
+/* Basic styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* Dark background for a tech-focused look */
+  color: #fff; /* Ensure text readability on dark background */
 }
 
+a {
+  color: #00e676; /* Highlight links with a vibrant green */
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #f8f8f2; /* Slightly lighter headings for contrast */
+}
+
+/* Header and navigation */
 header {
-    background-color: #1c1c1c;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav {
-    background-color: #333;
-    padding: 0.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+  background-color: #001529; /* Slightly darker header for distinction */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
+.active {
+  color: #f8f8f2; /* Highlight the active page */
+}
+
+/* Sections and content containers */
 section {
-    padding: 60px 0;
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.hero {
+  text-align: center;
 }
 
-h1, h2, h3 {
-    color: #1c1c1c;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+.feature {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #333; /* Define feature boxes */
+  margin-bottom: 15px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+/* Buttons */
+button {
+  background-color: #00e676; /* Vibrant green for action */
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-p {
-    font-size: 1.1em;
-    color: #555;
-}
-
+/* Footer */
 footer {
-    background-color: #1c1c1c;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background-color: #001529; /* Match header color */
+  padding: 20px;
+  text-align: center;
+  color: #f8f8f2;
+}
+
+/* Additional styling for cybersecurity theme */
+
+/* Use a monospace font for code blocks or technical elements */
+code {
+  font-family: monospace;
+  background-color: #222;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Icons for security concepts */
+.lock-icon {
+  /* Add icon styles here */
+}
+
+/* Animations or effects for visual appeal */
+.hero-image:hover {
+  /* Add hover effects for visual engagement */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust layout for mobile devices */
 }
